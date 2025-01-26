@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+}
+
+
+.image-container {
+    flex: 0.7;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 90%;
+    max-width: 350px; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(17, 116, 221, 0.3);
+}
+
+
+.overlay {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.title:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(45, 187, 226, 0.4);
+}
+
+
+.warning-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.warning-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 120px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+.warning-box:hover {
+    transform: scale(1.1);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.warning-box .icon {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
